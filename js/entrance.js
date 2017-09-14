@@ -2,43 +2,7 @@
    		FastClick.attach(document.body);
 	});
 
-	function over(){
-		//已结束
-      	$('.js-kai').attr('disabled','disabled');
-      	$('.kai-parent,.js-kai').css({background:'#b4b4b4',fontSize:'20px'})
-      	$('.js-kai').html('已结束');
-      	$('.main-title').html('抱歉，本次活动已全部结束');
-      	$('.subHeading').html('请继续关注“中山广电网络”，下次活动更精彩哦~');
-	}
 
-	function gone(){
-		//抢光啦
-      	$('.js-kai').attr('disabled','disabled');
-      	$('.kai-parent,.js-kai').css({background:'#b4b4b4',fontSize:'20px'})
-      	$('.js-kai').html('抢光啦');
-      	$('.main-title').html('抱歉，本轮红包已抢光');
-      	$('.subHeading').html('点击下方红包雨天气预报关注下一轮红包雨发放时间')
-	}
-
-	function expect(){
-		//请期待
-      	$('.js-kai').attr('disabled','disabled');
-      	$('.kai-parent,.js-kai').css({background:'#b4b4b4',fontSize:'20px'})
-      	$('.js-kai').html('请期待');
-      	$('.main-title').html('红包雨即将来袭');
-      	$('.subHeading').html('请准备抢红包');
-	}
-
-	function snatch(){
-		//已抢过
-      	$('.js-kai').attr('disabled','disabled');
-      	$('.kai-parent,.js-kai').css({background:'#b4b4b4',fontSize:'20px'})
-      	$('.js-kai').html('已抢过');
-      	$('.main-title').html('对不起！');
-      	$('.subHeading').html('您已领过本轮红包，请关注下一轮红包的发放！');
-	}
-
-  $(document).ready(function(){
   var swiper = new Swiper('.swiper-container', {
         loop : true,
         nextButton: '.swiper-button-next',
@@ -63,19 +27,19 @@
           //判断活动状态，改变按钮
           //状态为已结束
           if(true){
-            over();
+             $('#over').css('display','block')
           }
           //抢光啦
           else if(true){
-            gone();
+             $('#gone').css('display','block')
           }
            //请期待
           else if(true){
-            expect();
+            $('#expect').css('display','block')
           }
            //已抢过
           else if(true){
-            snatch();
+           $('#start').css('display','block')
           }
         }
         //页面加载前的动画
@@ -96,7 +60,7 @@
       
       success:function(data){
         //弹出错误信息
-        alert("错误信息");     
+        alert("错误信息");
         if(data.result.status=='fail'){
           //判断是否关注公众号
           if(true){
@@ -147,9 +111,3 @@
   document.querySelector(".know").addEventListener("click",function(){
     $('.mask3').css('display','none');
   },false)
-
-  // window.addEventListener('scroll',winScroll);
-  // function winScroll(e){
-  //   // if(document.body.scrollTop>240){
-  //   //  }
-  // }
