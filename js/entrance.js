@@ -2,51 +2,51 @@
    		FastClick.attach(document.body);
 	});
 
+	$(document).ready(function(){
+	  var swiper = new Swiper('.swiper-container', {
+	        loop : true,
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        paginationClickable: true,
+	        spaceBetween: 30,
+	        centeredSlides: true,
+	        autoplay:3000,
+	        autoplayDisableOnInteraction: false
+	    });
 
-  var swiper = new Swiper('.swiper-container', {
-        loop : true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay:3000,
-        autoplayDisableOnInteraction: false
-    });
-    
-    $.ajax({
-      type:   "get",
-      url:  "",
-      data:{},
+	    $.ajax({
+	      type:   "get",
+	      url:  "",
+	      data:{},
 
-    success:function(data){
-        if (data.result.status=='fail'){
-          alert('错误信息');
-          return;
-        }else{
-          //判断活动状态，改变按钮
-          //状态为已结束
-          if(true){
-             $('#over').css('display','block')
-          }
-          //抢光啦
-          else if(true){
-             $('#gone').css('display','block')
-          }
-           //请期待
-          else if(true){
-            $('#expect').css('display','block')
-          }
-           //已抢过
-          else if(true){
-           $('#start').css('display','block')
-          }
-        }
-        //页面加载前的动画
-        $('.mask4').css({'display':'block','background':'#fff'});
-        $('.mask4').css('display','none');
-      }
-    });
+	    success:function(data){
+	        if (data.result.status=='fail'){
+	          alert('错误信息');
+	          return;
+	        }else{
+	          //判断活动状态，改变按钮
+	          //状态为已结束
+	          if(true){
+	             $('#over').css('display','block')
+	          }
+	          //抢光啦
+	          else if(true){
+	             $('#gone').css('display','block')
+	          }
+	           //请期待
+	          else if(true){
+	            $('#expect').css('display','block')
+	          }
+	           //已抢过
+	          else if(true){
+	           $('#start').css('display','block')
+	          }
+	        }
+	        //页面加载前的动画
+	        $('.mask4').css({'display':'block','background':'#fff'});
+	        $('.mask4').css('display','none');
+	      }
+	    });
 });
 
 
