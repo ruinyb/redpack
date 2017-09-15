@@ -27,19 +27,23 @@
 	          //判断活动状态，改变按钮
 	          //状态为已结束
 	          if(true){
-	             $('#over').css('display','block')
+	             $('#over').css('display','block');
+	             $('#start').css('display','none');
 	          }
 	          //抢光啦
 	          else if(true){
-	             $('#gone').css('display','block')
+	             $('#gone').css('display','block');
+		         $('#start').css('display','none');
 	          }
 	           //请期待
 	          else if(true){
-	            $('#expect').css('display','block')
+	             $('#expect').css('display','block');
+		         $('#start').css('display','none');
 	          }
 	           //已抢过
 	          else if(true){
-	           $('#start').css('display','block')
+	             $('#snatch').css('display','block');
+		         $('#start').css('display','none');
 	          }
 	        }
 	        //页面加载前的动画
