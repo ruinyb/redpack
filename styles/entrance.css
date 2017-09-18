@@ -87,7 +87,7 @@ a:active {
   text-decoration: none!important;
 }
 .bordered {
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 .center {
   text-align: center;
@@ -464,7 +464,7 @@ a:active {
   font-size: 15px;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 .bottom .bottom-kid ul .col-xs-4 .big span {
   display: inline-block;
@@ -493,7 +493,7 @@ a:active {
   left: -30px;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 .bottom .bottom-kid .desc p {
   line-height: 25px;
