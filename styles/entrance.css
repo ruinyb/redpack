@@ -120,7 +120,7 @@ a:active {
 }
 .swiper-container .swiper-slide img {
   width: 100%;
-  height: auto;
+  height: 60px;
 }
 .swiper-container .swiper-slide p {
   font-size: 12px;
@@ -181,7 +181,7 @@ a:active {
   opacity: 0.7;
   font-size: 16px;
   line-height: 21px;
-  margin: -126px;
+  margin-top: -126px;
 }
 .middle .bottom-block {
   margin-top: 70px;
@@ -246,7 +246,7 @@ a:active {
     margin-top: 82px;
   }
   .middle .top-block-kid {
-    margin: -189px;
+    margin-top: -189px;
   }
   .middle .bottom-block {
     margin-top: 73px;
@@ -275,7 +275,7 @@ a:active {
     margin-top: 89px;
   }
   .middle .top-block-kid {
-    margin: -189px;
+    margin-top: -189px;
   }
   .middle .bottom-block {
     margin-top: 48px;
@@ -304,7 +304,7 @@ a:active {
     margin-top: 37px;
   }
   .middle .top-block-kid {
-    margin: -179px;
+    margin-top: -179px;
   }
   .middle .bottom-block {
     margin-top: 48px;
@@ -330,7 +330,7 @@ a:active {
     margin-top: 40px;
   }
   .middle .top-block-kid {
-    margin: -133px;
+    margin-top: -133px;
   }
   .middle .bottom-block {
     margin-top: 63px;
