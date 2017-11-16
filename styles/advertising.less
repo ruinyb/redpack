@@ -10,27 +10,17 @@ body{ margin:0 auto;max-width:640px; min-width:320px;color:#555; padding-bottom:
 a:hover, a:visited, a:link, a:active {text-decoration: none!important;}
 @pos-a:absolute;
 @pos-r:relative;
+@pos-f:fixed;
 @100:100%;
 @white:#fff;
-
 .container-fluid{margin: 0;padding: 0;position:@pos-r;height: auto;
 	header{background: #fef7ef; height: 35px; line-height: 35px; font-size: 14px;
     .back{ position: @pos-a;left: 10px; top: 10px;color: #f2767d;}
     .static{position: absolute;left:30px;}
     img{ position: @pos-a;display: inline-block; width: 19px; right: 15px; top: 3px;}
-	}
-	p{font-size: 24px; margin-top: 25px;font-weight: bold;color: #ea3f43; text-shadow: 0 0 2px #000;}
-	.three{position: @pos-a;width:@100;height: @100; min-height: 550px;z-index: -1;}
-	table{margin-top: 45%;
-		th{color: #fff;border: none!important;text-align: center;}
-	}
-	button{margin: 0 auto; width: 80% !important;max-width: 300px;padding: 10px;background: #fbb318;border-radius: 9px;outline: none!important;position: relative;  top: 20px;
-    &:active{  background:#e49c01!important;  }
-	}
+    
 }
-
-@media (min-width: 375px) {
-	.container-fluid{
-		.three{min-height: 700px;}
-	}
+.three{position: @pos-a;width:@100;height: @100; min-height: 550px;z-index: -1;}
+	.max{width:100%;height:auto;}
+	.min{width:80%;height:auto;}
 }

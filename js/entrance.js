@@ -2,7 +2,12 @@
    		FastClick.attach(document.body);
 	});
 
+var is_loaded = false,  // 页面加载锁
+    is_allow_click = true;   // 抢红包锁
+
+
 	$(document).ready(function(){
+    document.body.style.display="block";
 	  var swiper = new Swiper('.swiper-container', {
 	        loop : true,
 	        nextButton: '.swiper-button-next',
@@ -21,7 +26,7 @@
 
 	    success:function(data){
 	        if (data.result.status=='fail'){
-	          alert('错误信息');
+	          console.log('错误信息');
 	          return;
 	        }else{
 	          //判断活动状态，改变按钮
@@ -47,6 +52,7 @@
 	          }
 	        }
 	        //页面加载前的动画
+          is_loaded = true;
 	        $('.mask4').css({'display':'block','background':'#fff'});
 	        $('.mask4').css('display','none');
 	      }
@@ -56,15 +62,25 @@
 
 
   //开始抢红包
-	document.querySelector(".js-kai").addEventListener("click",function(){
+  document.querySelector(".js-kai").addEventListener("click",function(){
+   if ( false == is_loaded )
+   {
+      return ;
+   }
+   if ( false == is_allow_click )
+   {
+      return ;
+   }
+   is_allow_click = false;
     $.ajax({
       type:   "get",
       url:  "",
       data:{},
       
       success:function(data){
+        is_allow_click = true;
         //弹出错误信息
-        alert("错误信息");
+        //alert("错误信息");
         if(data.result.status=='fail'){
           //判断是否关注公众号
           if(true){
@@ -89,7 +105,7 @@
           $('.mask3 .mask-body .mask-content').html('拥堵中');
           return;
         }
-      }else{
+      }else if(data.result.status=='success' && is_allow_click==true){
         //抢到红包
         $('.mask1').css('display','block');
         //抢到多少钱
