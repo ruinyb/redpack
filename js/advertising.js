@@ -8,10 +8,4 @@ $(document).ready(function(){
 	        centeredSlides: true,
 	        autoplayDisableOnInteraction: false
 	    });
-
-	 $('.swiper-wrapper .swiper-slide .min').click(function(){
-	 	$(this).toggleClass('min');
-		$(this).toggleClass('max');
-	 })
-	 	
 });
