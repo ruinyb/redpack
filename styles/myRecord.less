@@ -35,14 +35,12 @@ header{
 .container-fluid{
 	padding: 0;
     position: relative;
-    background: url(../image/10.jpg);
     width: 100%;
     height: auto;
     background-size: cover;
-    min-height: 320px;
 	.static{
 		text-align:center;
-		color: #dd334a;
+		color: #fde760;
 		font-size: 16px;
 		position:@pos-r;
     top: 10px;
@@ -132,6 +130,20 @@ header{
 	}
 }
 
+@media(min-width:425px){
+	.user{
+		position: relative;
+		top: 33px;
+	}
+}
+
+@media (max-width:414px){
+	.user{
+		position: relative;
+		top:19px;
+	}
+}
+
 
 
 
@@ -142,9 +154,3 @@ header{
 	}
 }
 
-@media(min-width:425px){
-	.user{
-		position: relative;
-    	top: 33px;
-	}
-}

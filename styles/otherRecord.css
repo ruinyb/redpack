@@ -90,7 +90,7 @@ a:active {
   height: auto;
 }
 .container-fluid header {
-  background: #fef7ef;
+  background: #fff;
   height: 35px;
   line-height: 35px;
   font-size: 14px;
@@ -99,7 +99,7 @@ a:active {
   position: absolute;
   left: 10px;
   top: 10px;
-  color: #f2767d;
+  color: #8e8181;
 }
 .container-fluid header .static {
   position: absolute;
@@ -127,10 +127,14 @@ a:active {
   z-index: -1;
 }
 .container-fluid table {
-  margin-top: 45%;
+  background: #fff;
+  width: 90%;
+  margin: 45% auto;
+  border-radius: 16px;
+  box-shadow: 1px 1px 1px #cabcbc;
 }
 .container-fluid table th {
-  color: #fff;
+  color: #c30019;
   border: none!important;
   text-align: center;
 }
@@ -139,14 +143,14 @@ a:active {
   width: 80% !important;
   max-width: 300px;
   padding: 10px;
-  background: #fbb318;
+  background: linear-gradient(#f0402f, #c30019);
   border-radius: 9px;
   outline: none!important;
   position: relative;
   top: 20px;
 }
 .container-fluid button:active {
-  background: #e49c01!important;
+  background: #ff362e !important;
 }
 @media (min-width: 375px) {
   .container-fluid .three {

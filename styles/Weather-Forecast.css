@@ -117,14 +117,14 @@ body {
 }
 .container-fluid .nine {
   width: 90%;
-  padding-top: 40%;
+  padding-top: 49%;
 }
 .container-fluid button {
   margin: 0 auto;
   width: 80% !important;
   max-width: 300px;
   padding: 10px;
-  background: #fbb318;
+  background: linear-gradient(#f0402f, #c30019);
   border-radius: 9px;
   outline: none!important;
   position: relative;
@@ -132,7 +132,7 @@ body {
   border: none;
 }
 .container-fluid button:active {
-  background: #e49c01!important;
+  background: #ff362e!important;
 }
 @media (max-width: 320px) {
   .ganen {

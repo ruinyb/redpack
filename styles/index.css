@@ -1,0 +1,192 @@
+html {
+  font-size: 62.5%;
+}
+.pos-a {
+  position: absolute;
+  z-index: -1;
+}
+.top .img-2 {
+  z-index: -1;
+  margin-top: -0.2rem;
+}
+.top .activity-time {
+  margin-top: -1.8rem;
+}
+.top .lb-container {
+  height: 0.7rem;
+  background: #fdf4f7;
+  overflow: inherit;
+}
+.top .lb-container .am-slides > li {
+  line-height: 0.7rem;
+}
+.top .lb-container .am-slides > li span {
+  color: #d53247;
+  font-size: 0.5rem;
+}
+.top .am-slider-b2 .am-direction-nav a {
+  color: #d53247;
+  background: none;
+}
+.middle {
+  text-align: center;
+}
+.middle .md-img1 {
+  height: 71%;
+}
+.middle .ghxc {
+  width: 88%;
+  margin: .4rem auto 0;
+}
+.middle .md-bg {
+  width: 88%;
+  height: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.middle .rule-link {
+  display: inline-block;
+  width: 78%;
+  height: .9rem;
+  line-height: .9rem;
+  background: #d63547;
+  border-radius: 0.2rem;
+  margin: .4rem auto 0;
+  color: #fadfc4;
+  font-size: .3rem;
+  box-shadow: 0.5px 0.5px 0.5px #797979;
+}
+.middle ul {
+  margin: 0;
+  padding: 0;
+}
+.middle ul li {
+  display: flex;
+  width: 78%;
+  height: 1.5rem;
+  background: #d63547;
+  border-radius: .2rem;
+  font-size: .2rem;
+  margin: .3rem auto;
+  box-shadow: 0.5px 0.5px 0.5px #797979;
+}
+.middle ul li div {
+  flex: 1;
+  color: #fef0d0;
+}
+.middle ul li .logo {
+  background: #fff;
+  border-radius: 0.2rem;
+  margin: .1rem;
+  overflow: hidden;
+}
+.middle ul li .logo .qn {
+  margin: .1rem auto;
+  width: 80%;
+}
+.middle ul li .logo .youz {
+  margin: 0 auto;
+  width: 90%;
+}
+.middle ul li .logo .youc {
+  margin: .2rem auto;
+  width: 70%;
+}
+.middle ul li .logo .xhjy {
+  margin: -0.05rem auto;
+}
+.middle ul li .hd-time {
+  line-height: 1.5rem;
+}
+.middle ul li .hd-money {
+  margin-top: 0.3rem;
+}
+.middle ul li .gs-name {
+  line-height: 1.5rem;
+}
+.bottom {
+  text-align: center;
+  position: relative;
+  top: 1rem;
+}
+.bottom p {
+  padding: 0;
+  margin: .2rem auto;
+  color: #f7e9e9;
+  font-size: .2rem;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  .middle ul li .hd-money {
+    margin-top: 0.4rem;
+  }
+  .middle ul li .logo .qn {
+    margin: .16rem auto;
+    width: 80%;
+  }
+  .middle ul li .logo .youz {
+    margin: .1rem auto;
+    width: 90%;
+  }
+  .middle ul li .logo .youc {
+    margin: .27rem auto;
+    width: 70%;
+  }
+  .middle ul li .logo .xhjy {
+    margin: 0.1rem auto;
+  }
+}
+@media (max-width: 640px) {
+  .top .activity-time {
+    margin-top: -1.8rem;
+  }
+  .middle .md-bg {
+    height: 41%;
+  }
+  .middle .md-img1 {
+    height: 67%;
+  }
+}
+@media (max-width: 512px) {
+  .top .activity-time {
+    margin-top: -1.8rem;
+  }
+}
+@media (max-width: 414px) {
+  .top .activity-time {
+    margin-top: -1.8rem;
+  }
+  .middle ul li {
+    font-size: .3rem;
+  }
+}
+@media (max-width: 412px) {
+  .top .activity-time {
+    margin-top: -1.8rem;
+  }
+}
+@media (max-width: 375px) {
+  .top .activity-time {
+    margin-top: -1.7rem;
+  }
+  .middle .md-bg {
+    height: 40%;
+  }
+}
+@media (max-width: 360px) {
+  .top .activity-time {
+    margin-top: -1.7rem;
+  }
+  .middle .md-bg {
+    height: 40%;
+  }
+}
+@media (max-width: 320px) {
+  .top .activity-time {
+    margin-top: -1.7rem;
+  }
+  .middle .md-bg {
+    height: 40%;
+  }
+}
