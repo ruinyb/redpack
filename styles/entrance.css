@@ -220,12 +220,6 @@ a:active {
   z-index: -1;
   overflow: hidden;
 }
-.middle .f1 {
-  display: block;
-}
-.middle .f2 {
-  display: none;
-}
 .middle .middle-redpack-button {
   margin-top: 93px;
   color: #000;
@@ -259,11 +253,6 @@ a:active {
   font-size: 13px;
   line-height: 21px;
   margin-top: 10px;
-}
-@media (max-width: 1024px) {
-  .mask5 #success {
-    top: 76%;
-  }
 }
 @media (max-width: 768px) {
   .middle {
@@ -316,9 +305,6 @@ a:active {
   .qnws {
     top: 155px!important;
   }
-  .mask5 #success {
-    top: 76%;
-  }
 }
 @media (max-width: 640px) {
   .middle .middle-redpack-container {
@@ -356,10 +342,6 @@ a:active {
   }
   .qnws {
     top: 150px!important;
-  }
-  .mask5 #success {
-    top: 76%;
-    left: -11px;
   }
 }
 @media (max-width: 512px) {
@@ -413,10 +395,6 @@ a:active {
   .qnws {
     top: 110px!important;
   }
-  .mask5 #success {
-    top: 60.5%;
-    left: 5px;
-  }
 }
 @media (max-width: 414px) {
   .middle {
@@ -444,7 +422,7 @@ a:active {
   }
   .middle .middle-redpack-title .middle-redpack-title-gsname {
     position: relative;
-    top: -25px;
+    top: -35px;
   }
   .middle .middle-redpack-button {
     margin-top: 25px;
@@ -479,13 +457,6 @@ a:active {
   .qnws {
     top: 70px!important;
   }
-  .big-wx {
-    margin-top: 16px;
-  }
-  .mask5 #success {
-    top: 76%;
-    left: -2px;
-  }
 }
 @media (max-width: 412px) {
   .middle {
@@ -493,10 +464,10 @@ a:active {
   }
   .middle .fourty-four {
     position: absolute;
-    top: 479px;
+    top: 469px;
   }
   .middle .middle-redpack-container {
-    top: 13px;
+    top: -13x;
   }
   .middle .middle-redpack-img {
     height: 487px;
@@ -513,10 +484,6 @@ a:active {
   }
   .qnws {
     top: 70px!important;
-  }
-  .mask5 #success {
-    top: 76%;
-    left: 0;
   }
 }
 @media (max-width: 375px) {
@@ -545,7 +512,7 @@ a:active {
   }
   .middle .middle-redpack-title .middle-redpack-title-gsname {
     position: relative;
-    top: -10px;
+    top: -20px;
   }
   .middle .middle-redpack-button {
     margin-top: 12px;
@@ -567,13 +534,6 @@ a:active {
   }
   .qnws {
     top: 45px!important;
-  }
-  .big-wx {
-    margin-top: 17px;
-  }
-  .mask5 #success {
-    top: 76%;
-    left: 0;
   }
 }
 @media (max-width: 360px) {
@@ -628,10 +588,6 @@ a:active {
   }
   .bottom .bottom-kid {
     top: 77px!important;
-  }
-  .mask5 #success {
-    top: 76%;
-    left: 1px;
   }
 }
 @media (max-width: 320px) {
@@ -708,10 +664,6 @@ a:active {
   .qnws {
     top: 40px!important;
   }
-  .mask5 #success {
-    top: 76.2%;
-    left: 0;
-  }
 }
 /****** Index Middle End ******/
 /****** Index Bottom End ******/
@@ -764,7 +716,7 @@ a:active {
   margin-top: 18px;
   margin-right: -1px;
 }
-.bottom .bottom-kid ul .col-xs-4 .big .big-kai {
+.bottom .bottom-kid ul .col-xs-4 .big textarea {
   height: 63px;
   width: 65px;
   text-align: center;
@@ -801,15 +753,6 @@ a:active {
 }
 .bottom .bottom-kid .yellow:active {
   background: #e49c01!important;
-}
-.big-wx {
-  height: 63px;
-  width: 65px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 20px;
-  resize: none;
-  overflow: hidden;
 }
 .qnws {
   color: #fff;
@@ -979,7 +922,7 @@ a:active {
 .mask3 .mask-body {
   position: fixed;
   z-index: 5000;
-  width: 55%;
+  width: 50%;
   max-width: 300px;
   top: 50%;
   left: 50%;
@@ -991,7 +934,7 @@ a:active {
   overflow: hidden;
 }
 .mask3 .mask-body .mask-content {
-  padding: 50px;
+  padding: 20px;
 }
 .mask3 .mask-body .know {
   border-top: 1px solid #eee;
@@ -1007,7 +950,7 @@ a:active {
   right: 0;
   left: 0;
   bottom: 0;
-  display: block;
+  display: none;
 }
 .mask4 .mask-body {
   position: fixed;
@@ -1031,42 +974,3 @@ a:active {
   font-size: 16px;
 }
 /****** 记载中 End ******/
-.mask5 {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  display: none;
-  background: rgba(0, 0, 0, 0.7);
-}
-.mask5 #success {
-  color: #5cb85c;
-  width: 270.5px;
-  height: 24px;
-  line-height: 24px;
-  position: absolute;
-  right: 0;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 2px;
-  z-index: 4;
-  background: #fff;
-  display: none;
-  opacity: 0.9;
-}
-.mask5 #success2 {
-  color: #ffffff;
-  height: 24px;
-  line-height: 24px;
-  position: absolute;
-  right: 0;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 2px;
-  z-index: 4;
-  left: 0;
-  top: -15%;
-  font-size: 23px;
-}
