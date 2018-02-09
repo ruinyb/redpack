@@ -82,24 +82,25 @@ html {
   overflow: hidden;
 }
 .middle ul li .logo .qn {
-  margin: .1rem auto;
+  margin: .15rem auto;
   width: 80%;
 }
 .middle ul li .logo .youz {
-  margin: 0 auto;
+  margin: .1rem  auto;
   width: 90%;
 }
 .middle ul li .logo .youc {
-  margin: -0.05rem auto;
+  margin: .05rem auto;
+  width: 100%;
 }
 .middle ul li .logo .xhjy {
-  margin: -0.05rem auto;
+  margin: 0.1rem auto;
 }
 .middle ul li .hd-time {
   line-height: 1.5rem;
 }
 .middle ul li .hd-money {
-  margin-top: 0.3rem;
+  margin-top: 0.45rem;
 }
 .middle ul li .gs-name {
   line-height: 1.5rem;
@@ -116,9 +117,40 @@ html {
   font-size: .2rem;
   letter-spacing: 2px;
 }
-@media (min-width: 768px) {
+.mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(17, 17, 17, 0.7);
+  display: none;
+}
+.mask img {
+  max-width: 90%;
+  margin: 34% auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.mask .mask-desc {
+  position: absolute;
+  margin: 40% auto;
+  width: 53%;
+  left: 0;
+  right: 0;
+  font-size: .3rem;
+  color: #d41f1a;
+}
+.mask p {
+  margin: 0;
+  margin-top: 0.1rem;
+}
+@media (max-width: 768px) {
   .middle ul li .hd-money {
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
   }
   .middle ul li .logo .qn {
     margin: .16rem auto;
@@ -129,11 +161,19 @@ html {
     width: 90%;
   }
   .middle ul li .logo .youc {
-    margin: .27rem auto;
-    width: 70%;
+    margin: .1rem auto;
+    width: 100%;
   }
   .middle ul li .logo .xhjy {
     margin: 0.1rem auto;
+  }
+  .mask .mask-desc {
+    margin: 29% auto;
+    width: 73%;
+    font-size: 0.3rem;
+  }
+  .mask img {
+    margin: 22% auto;
   }
 }
 @media (max-width: 640px) {
@@ -146,10 +186,35 @@ html {
   .middle .md-img1 {
     height: 67%;
   }
+  .middle ul li .logo .qn {
+    margin: .1rem auto;
+    width: 80%;
+  }
+  .middle ul li .logo .youz {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .middle ul li .logo .youc {
+    margin: -0.05rem auto;
+    width: 100%;
+  }
+  .middle ul li .logo .xhjy {
+    margin: 0.03rem auto;
+  }
+  .mask .mask-desc {
+    margin: 55% auto;
+    width: 80%;
+  }
+  .mask img {
+    margin: 45% auto;
+  }
 }
 @media (max-width: 512px) {
   .top .activity-time {
     margin-top: -1.8rem;
+  }
+  .middle ul li .logo .xhjy {
+    margin: -0.03rem auto;
   }
 }
 @media (max-width: 414px) {
@@ -164,6 +229,12 @@ html {
   .top .activity-time {
     margin-top: -1.8rem;
   }
+  .mask .mask-desc {
+    margin: 42% auto;
+  }
+  .mask img {
+    margin: 32% auto;
+  }
 }
 @media (max-width: 375px) {
   .top .activity-time {
@@ -171,6 +242,12 @@ html {
   }
   .middle .md-bg {
     height: 40%;
+  }
+  .mask .mask-desc {
+    margin: 50% auto;
+  }
+  .mask img {
+    margin: 40% auto;
   }
 }
 @media (max-width: 360px) {

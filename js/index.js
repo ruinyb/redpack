@@ -46,6 +46,15 @@
 	}
 })(750, 750);
 
+$('.rule-link').click(function () {
+	$('.mask').css('display','block')
+})
+
+$('.mask').click(function () {
+	$('.mask').css('display','none')
+})
+
+
 // $(document).ready(function () {
 // 	if($('.middle ul li .gs-name').text().length <= 4 ){
 // 		$('.middle ul li .gs-name').css('line-height','1.5rem');
