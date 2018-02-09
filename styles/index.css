@@ -128,6 +128,7 @@ html {
   display: none;
 }
 .mask img {
+  width: 63%;
   max-width: 90%;
   margin: 34% auto;
   position: absolute;
@@ -173,7 +174,8 @@ html {
     font-size: 0.3rem;
   }
   .mask img {
-    margin: 22% auto;
+    margin: 22% auto ;
+    width: 80%;
   }
 }
 @media (max-width: 640px) {
@@ -207,6 +209,7 @@ html {
   }
   .mask img {
     margin: 45% auto;
+    width: 90%;
   }
 }
 @media (max-width: 512px) {
