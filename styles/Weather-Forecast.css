@@ -117,7 +117,7 @@ body {
 }
 .container-fluid .nine {
   width: 90%;
-  padding-top: 49%;
+  padding-top: 57%;
 }
 .container-fluid button {
   margin: 0 auto;
@@ -128,7 +128,7 @@ body {
   border-radius: 9px;
   outline: none!important;
   position: relative;
-  top: 20px;
+  top: 40px;
   border: none;
 }
 .container-fluid button:active {
