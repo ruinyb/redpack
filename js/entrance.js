@@ -137,7 +137,6 @@ var name=getQueryString('name');
 
 /**** 初始化调用方法 ****/
 $(document).ready(function(){
-	alert('d');
 	getBenlunMoneny();
 	$('.middle .middle-redpack-button').css('display','inline-block');
 
