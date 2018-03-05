@@ -79,18 +79,51 @@ function getQueryString(name) {
 
 /*** 获取各公司本轮（上午）金额 ***/
 function getBenlunMoneny(){
-	if(id==array[0]){
+	if(id=='wx713a8c95b0a4eb14'){
 		//邮政本轮红包金额
-		$('.swiper-benlun').text(array[4]);
-	}else if(id==array[11]){
-		//青年网商本轮红包金额
-		$('.swiper-benlun').text(array[16]);
-	}else if(id==array[23]){
-		//邮储本轮红包金额
-		$('.swiper-benlun').text(array[30]);
-	}else if(id==array[37]){
-		//星火本轮红包金额
-		$('.swiper-benlun').text(array[42]);
+		$('.middle-top-img').attr('src',array[6]);
+		$('.middle-redpack-log img').attr('src',array[7]);
+		$('.mask2 .mask-body img').attr('src',array[8]);
+		$('.swiper-slide .swiper-lunboImg').attr('src',array[9]);
+		$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').add('.subHeading-gzh').text(array[1]);
+		$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[2]);
+		$('.swiper-zonge').text(array[3]);
+		$('.gs-guangGao').add('.swiper-slide a').add('.mask1 .mask-body .mask1-gszx').attr('href',array[10]);
+	}else if(id=='wxf21b6048d08dd3e4'){
+		$('.middle-top-img').attr('src',array[18]);
+		$('.middle-redpack-log img').attr('src',array[19]);
+		$('.mask2 .mask-body img').attr('src',array[20]);
+		$('.swiper-slide .swiper-lunboImg').attr('src',array[21]);
+		$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').text(array[12]);
+		$('.subHeading-gzh').text(array[13]);
+		$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[14]);
+		$('.swiper-zonge').text(array[15]);
+		$('.gs-guangGao').add('.swiper-slide a').add('.mask1 .mask-body .mask1-gszx').attr('href',array[22]);
+		$('.middle-redpack-log img').addClass('redpack-qnws-log');
+	}else if(id=='q'){
+		$('.middle-top-img').attr('src',array[32]);
+		$('.middle-redpack-log img').attr('src',array[33]);
+		$('.mask2 .mask-body img').attr('src',array[34]);
+		$('.swiper-slide .swiper-lunboImg').attr('src',array[35]);
+		$('.middle-redpack-title-gsname').text(array[25]);
+		$('.desc-gsName').text(array[26]);
+		$('.swiper-gsname').text(array[24]);
+		$('.subHeading-gzh').text(array[27]);
+		$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[28]);
+		$('.swiper-zonge').text(array[29]);
+		$('.gs-guangGao').add('.mask1 .mask-body .mask1-gszx').add('.swiper-slide a').attr('href',array[36]);
+		$('.middle-redpack-log img').addClass('redpack-youc-log');
+	}else if(id=='w'){
+		$('.middle-top-img').attr('src',array[44])
+		$('.middle-redpack-log img').attr('src',array[45]);
+		$('.mask2 .mask-body img').attr('src',array[46]);
+		$('.swiper-slide .swiper-lunboImg').attr('src',array[47]);
+		$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').text(array[38]);
+		$('.subHeading-gzh').text(array[39]);
+		$('.btn-gsbtn').text(array[40]);
+		$('.swiper-zonge').add('.mask1 .mask-body .mask1-gszx button').text(array[41]);
+		$('.gs-guangGao').add('.mask1 .mask-body .mask1-gszx').add('.swiper-slide a').attr('href',array[48]);
+		$('.middle-redpack-log img').addClass('redpack-xh-log');
 	}
 }
 
@@ -104,6 +137,7 @@ var name=getQueryString('name');
 
 /**** 初始化调用方法 ****/
 $(document).ready(function(){
+	getBenlunMoneny();
 	$('.middle .middle-redpack-button').css('display','inline-block');
 
 	/****顶部轮播图设置****/
@@ -191,69 +225,69 @@ $(document).ready(function(){
 
 
 	/**** 获取公司id 读取数组内容 ****/
-	$.ajax({
-		url: 'https://redpack.qnws.com.cn/wechat/main/appid',
-		type: 'GET',
-		dataType: 'json',
-		data:'{}',
-
-		success: function(data){
-
-			if(id == 'wx713a8c95b0a4eb14'){
-				//邮政
-				$('.middle-top-img').attr('src',array[6]);
-				$('.middle-redpack-log img').attr('src',array[7]);
-				$('.mask2 .mask-body img').attr('src',array[8]);
-				$('.swiper-slide .swiper-lunboImg').attr('src',array[9]);
-				$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').add('.subHeading-gzh').text(array[1]);
-				$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[2]);
-				$('.swiper-zonge').text(array[3]);
-				$('.gs-guangGao').add('.swiper-slide a').add('.mask1 .mask-body .mask1-gszx').attr('href',array[10]);
-			}else if(id == 'wxf21b6048d08dd3e4'){
-				//青年
-				$('.middle-top-img').attr('src',array[18]);
-				$('.middle-redpack-log img').attr('src',array[19]);
-				$('.mask2 .mask-body img').attr('src',array[20]);
-				$('.swiper-slide .swiper-lunboImg').attr('src',array[21]);
-				$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').text(array[12]);
-				$('.subHeading-gzh').text(array[13]);
-				$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[14]);
-				$('.swiper-zonge').text(array[15]);
-				$('.gs-guangGao').add('.swiper-slide a').add('.mask1 .mask-body .mask1-gszx').attr('href',array[22]);
-				$('.middle-redpack-log img').addClass('redpack-qnws-log');
-			}else if (id == 'q') {
-				//邮储
-				$('.middle-top-img').attr('src',array[32]);
-				$('.middle-redpack-log img').attr('src',array[33]);
-				$('.mask2 .mask-body img').attr('src',array[34]);
-				$('.swiper-slide .swiper-lunboImg').attr('src',array[35]);
-				$('.middle-redpack-title-gsname').text(array[25]);
-				$('.desc-gsName').text(array[26]);
-				$('.swiper-gsname').text(array[24]);
-				$('.subHeading-gzh').text(array[27]);
-				$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[28]);
-				$('.swiper-zonge').text(array[29]);
-				$('.gs-guangGao').add('.mask1 .mask-body .mask1-gszx').add('.swiper-slide a').attr('href',array[36]);
-				$('.middle-redpack-log img').addClass('redpack-youc-log');
-			}else if (id == 'w') {
-				//星火
-				$('.middle-top-img').attr('src',array[44])
-				$('.middle-redpack-log img').attr('src',array[45]);
-				$('.mask2 .mask-body img').attr('src',array[46]);
-				$('.swiper-slide .swiper-lunboImg').attr('src',array[47]);
-				$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').text(array[38]);
-				$('.subHeading-gzh').text(array[39]);
-				$('.btn-gsbtn').text(array[40]);
-				$('.swiper-zonge').add('.mask1 .mask-body .mask1-gszx button').text(array[41]);
-				$('.gs-guangGao').add('.mask1 .mask-body .mask1-gszx').add('.swiper-slide a').attr('href',array[48]);
-				$('.middle-redpack-log img').addClass('redpack-xh-log');
-			}else{
-				$('.mask4').css({'display':'block'});
-				return;
-			}
-			$('.mask4').css('display','none');
-		}
-	});
+	// $.ajax({
+	// 	url: 'http://redpack.qnws.com.cn/wechat/main/appid',
+	// 	type: 'GET',
+	// 	dataType: 'json',
+	// 	data:'{}',
+	//
+	// 	success: function(data){
+	//
+	// 		if(id == 'wx713a8c95b0a4eb14'){
+	// 			//邮政
+	// 			$('.middle-top-img').attr('src',array[6]);
+	// 			$('.middle-redpack-log img').attr('src',array[7]);
+	// 			$('.mask2 .mask-body img').attr('src',array[8]);
+	// 			$('.swiper-slide .swiper-lunboImg').attr('src',array[9]);
+	// 			$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').add('.subHeading-gzh').text(array[1]);
+	// 			$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[2]);
+	// 			$('.swiper-zonge').text(array[3]);
+	// 			$('.gs-guangGao').add('.swiper-slide a').add('.mask1 .mask-body .mask1-gszx').attr('href',array[10]);
+	// 		}else if(id == 'wxf21b6048d08dd3e4'){
+	// 			//青年
+	// 			$('.middle-top-img').attr('src',array[18]);
+	// 			$('.middle-redpack-log img').attr('src',array[19]);
+	// 			$('.mask2 .mask-body img').attr('src',array[20]);
+	// 			$('.swiper-slide .swiper-lunboImg').attr('src',array[21]);
+	// 			$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').text(array[12]);
+	// 			$('.subHeading-gzh').text(array[13]);
+	// 			$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[14]);
+	// 			$('.swiper-zonge').text(array[15]);
+	// 			$('.gs-guangGao').add('.swiper-slide a').add('.mask1 .mask-body .mask1-gszx').attr('href',array[22]);
+	// 			$('.middle-redpack-log img').addClass('redpack-qnws-log');
+	// 		}else if (id == 'q') {
+	// 			//邮储
+	// 			$('.middle-top-img').attr('src',array[32]);
+	// 			$('.middle-redpack-log img').attr('src',array[33]);
+	// 			$('.mask2 .mask-body img').attr('src',array[34]);
+	// 			$('.swiper-slide .swiper-lunboImg').attr('src',array[35]);
+	// 			$('.middle-redpack-title-gsname').text(array[25]);
+	// 			$('.desc-gsName').text(array[26]);
+	// 			$('.swiper-gsname').text(array[24]);
+	// 			$('.subHeading-gzh').text(array[27]);
+	// 			$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[28]);
+	// 			$('.swiper-zonge').text(array[29]);
+	// 			$('.gs-guangGao').add('.mask1 .mask-body .mask1-gszx').add('.swiper-slide a').attr('href',array[36]);
+	// 			$('.middle-redpack-log img').addClass('redpack-youc-log');
+	// 		}else if (id == 'w') {
+	// 			//星火
+	// 			$('.middle-top-img').attr('src',array[44])
+	// 			$('.middle-redpack-log img').attr('src',array[45]);
+	// 			$('.mask2 .mask-body img').attr('src',array[46]);
+	// 			$('.swiper-slide .swiper-lunboImg').attr('src',array[47]);
+	// 			$('.middle-redpack-title-gsname').add('.desc-gsName').add('.swiper-gsname').text(array[38]);
+	// 			$('.subHeading-gzh').text(array[39]);
+	// 			$('.btn-gsbtn').text(array[40]);
+	// 			$('.swiper-zonge').add('.mask1 .mask-body .mask1-gszx button').text(array[41]);
+	// 			$('.gs-guangGao').add('.mask1 .mask-body .mask1-gszx').add('.swiper-slide a').attr('href',array[48]);
+	// 			$('.middle-redpack-log img').addClass('redpack-xh-log');
+	// 		}else{
+	// 			$('.mask4').css({'display':'block'});
+	// 			return;
+	// 		}
+	// 		$('.mask4').css('display','none');
+	// 	}
+	// });
 	/**** 获取公司id ****/
 
 });
