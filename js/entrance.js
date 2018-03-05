@@ -192,7 +192,7 @@ $(document).ready(function(){
 
 	/**** 获取公司id 读取数组内容 ****/
 	$.ajax({
-		url: 'http://redpack.qnws.com.cn/wechat/main/appid',
+		url: 'https://redpack.qnws.com.cn/wechat/main/appid',
 		type: 'GET',
 		dataType: 'json',
 		data:'{}',
