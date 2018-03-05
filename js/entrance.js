@@ -199,7 +199,7 @@ $(document).ready(function(){
 
 		success: function(data){
 
-			if(id == data[0]){
+			if(id == 'wx713a8c95b0a4eb14'){
 				//邮政
 				$('.middle-top-img').attr('src',array[6]);
 				$('.middle-redpack-log img').attr('src',array[7]);
@@ -209,7 +209,7 @@ $(document).ready(function(){
 				$('.btn-gsbtn').add('.mask1 .mask-body .mask1-gszx button').text(array[2]);
 				$('.swiper-zonge').text(array[3]);
 				$('.gs-guangGao').add('.swiper-slide a').add('.mask1 .mask-body .mask1-gszx').attr('href',array[10]);
-			}else if(id == data[1]){
+			}else if(id == 'wxf21b6048d08dd3e4'){
 				//青年
 				$('.middle-top-img').attr('src',array[18]);
 				$('.middle-redpack-log img').attr('src',array[19]);
@@ -221,7 +221,7 @@ $(document).ready(function(){
 				$('.swiper-zonge').text(array[15]);
 				$('.gs-guangGao').add('.swiper-slide a').add('.mask1 .mask-body .mask1-gszx').attr('href',array[22]);
 				$('.middle-redpack-log img').addClass('redpack-qnws-log');
-			}else if (id == '') {
+			}else if (id == 'q') {
 				//邮储
 				$('.middle-top-img').attr('src',array[32]);
 				$('.middle-redpack-log img').attr('src',array[33]);
@@ -235,7 +235,7 @@ $(document).ready(function(){
 				$('.swiper-zonge').text(array[29]);
 				$('.gs-guangGao').add('.mask1 .mask-body .mask1-gszx').add('.swiper-slide a').attr('href',array[36]);
 				$('.middle-redpack-log img').addClass('redpack-youc-log');
-			}else if (id == '') {
+			}else if (id == 'w') {
 				//星火
 				$('.middle-top-img').attr('src',array[44])
 				$('.middle-redpack-log img').attr('src',array[45]);
