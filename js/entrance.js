@@ -372,7 +372,7 @@ function goGetRedpack()
 	$('.mask4').css('display','block');
 	$.ajax({
 		type:   "get",
-		url:  "http://localhost:63342/WWW/newyear-redPacket/entrance.json",
+		url:  "https://ruinyb.github.io/redpack/entrance.json",
 		datatype:"json",
 		data:{
 
