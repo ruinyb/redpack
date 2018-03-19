@@ -216,8 +216,8 @@ $(document).ready(function(){
 
 			//页面加载前的动画
 			is_loaded = true;
-			$('.mask4').css({'display':'block'});
-			$('.mask4').css('display','none');
+// 			$('.mask4').css({'display':'block'});
+// 			$('.mask4').css('display','none');
 	 	}
 	});
 	/**** 判断活动状态 ****/
