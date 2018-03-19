@@ -143,8 +143,7 @@ $(document).ready(function(){
 	/****顶部轮播图设置****/
 	var swiper = new Swiper('.swiper-container', {
 		loop : true,
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
+		
 		paginationClickable: true,
 		spaceBetween: 30,
 		centeredSlides: true,
